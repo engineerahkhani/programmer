@@ -1,196 +1,363 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
 <head>
+    <title>Programmer</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Programmer
-    </title>
-    <link href="css/css.css" rel="stylesheet" type="text/css"/>
-    <link href="css/hover-min.css" rel="stylesheet" type="text/css"/>
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.css" rel="stylesheet" media="screen">
+    <link href="css/main.css" rel="stylesheet" media="all">
+    <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css" media="all">
+    <!--<style>-->
+        <!--.affix {-->
+            <!--top: 0;-->
+            <!--width: 100%;-->
+            <!--z-index: 100;-->
+        <!--}-->
+
+        <!--.affix + .container-fluid {-->
+            <!--padding-top: 70px;-->
+        <!--}-->
+   <!--*{-->
+       <!--direction: rtl !important;-->
+
+   <!--}-->
+    <!--</style>-->
 </head>
-<body>
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
 
+ <!--welcome section-->
+ <div id="welcome" class="carousel slide">
 
-<div id="home" class="row">
-    <div id="my-image" class="row"><img src="img/C1.jpg" width="250" height="250" class="circle"></div>
-    <div id="my-name" class="row">
-        <h2>احمد حسین خانی هستم</h2>
-        <h4>من عاشق برنامه نویسی و دنیای آی تی هستم و به افراد، سازمانها و شرکت ها کمک میکنم تا نرم افزار و وب سایت مورد
-            علاقه خودشون رو داشته باشند.</h4>
+     <ol class="carousel-indicators">
+         <li data-target="#welcome" data-slide-to="0" class="active"></li>
+         <li data-target="#welcome" data-slide-to="1" ></li>
+         <li data-target="#welcome" data-slide-to="2" ></li>
+     </ol>
+   <div class="carousel-inner">
+       <div class="item active">
+           <img src="img/bg.jpg">
+           <div class="container active">
+               <div class="carousel-caption">
+                   <h1>نرم افزار های تحت وب</h1>
+                   <p>طراحی و توسعه نرم افزار های تحت وب متناسب با نیاز شما</p>
+                   <p><a href="#" class="btn btn-success btn-lg">سفارش</a> </p>
+               </div>
+           </div>
+       </div>
+       <div class="item ">
+           <img src="img/bg1.jpg">
+           <div class="container active">
+               <div class="carousel-caption">
+                   <h1>نرم افزار های موبایل</h1>
+                   <p>طراحی و توسعه نرم افزار های اندروید متناسب با نیاز های شما</p>
+                   <p><a href="#" class="btn btn-success btn-lg">سفارش</a> </p>
+               </div>
+           </div>
+       </div>
+       <div class="item ">
+           <img src="img/bg2.jpg">
+           <div class="container active">
+               <div class="carousel-caption">
+                   <h1>طراحی وب</h1>
+                   <p>طراحی و توسعه وب سایت شخصی و کاتالوگ محصولات</p>
+                   <p><a href="#" class="btn btn-success btn-lg">سفارش</a> </p>
+               </div>
+           </div>
+       </div>
+   </div>
+   <a class="left carousel-control" href="#welcome" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
+   <a class="right carousel-control" href="#welcome" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
+ </div>
+ <!--welcome end-->
+ <!--navigation goes here-->
+ <nav class="navbar navbar-inverse "  data-spy="affix" data-offset-top="197">
+     <div class="navbar-header">
+         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+             <span class="sr-only">EngineerKhani</span>
+             <span class="icon-bar"></span>
+             <span class="icon-bar"></span>
+             <span class="icon-bar"></span>
+         </button>
+         <!--site logo-->
+         <a class="navbar-brand" href="index.html">EngineerKhani</a>
+     </div>
+     <div class="navbar-collapse collapse">
+         <ul class="nav navbar-nav">
+             <li class="active"><a href="#welcome">خانه</a></li>
+             <li><a href="#aboutMe"> رزومه</a></li>
+             <li><a href="#blog">وبلاگ</a></li>
+             <li><a href="#sample">نمونه کار</a></li>
+             <li><a href="#friends">دوستان</a></li>
+             <li><a href="#contactMe">تماس با من</a></li>
+             <li class="dropdown">
+                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">شبکه های اجتماعی<b class="caret"></b> </a>
+                 <ul class="dropdown-menu">
+                     <li><a href="">facebook</a> </li>
+                     <li><a href="">google+</a> </li>
+                     <li><a href="">GitHub</a> </li>
+                     <li><a href="">Linkedin</a> </li>
+                 </ul>
+
+             </li>
+
+         </ul>
+     </div>
+ </nav>
+ <!--end navigation-->
+ <!--intro section goes here-->
+ <div class="intro-block">
+     <div class="container" id="aboutMe">
+         <div class="row">
+             <div class="row">
+                 <img src="img/C2.jpg" class="img-responsive img-circle">
+             </div>
+             <div class="row">
+                 <h1 class="text-muted">احمد حسین خانی هستم</h1>
+                 <blockquote><p class="lead">&ldquo;من عاشق برنامه نویسی و دنیای آی تی هستم و به سازمان ها - شرکت ها - نهاد ها و افراد کمک می کنم تا وب سایت و مورد علاقه خود رو داشته باشند</p>
+             &rdquo;<p></blockquote><a class="btn btn-lg btn-primary" href="#" >شروع</a> </p>
+             </div>
+         </div>
+     </div>
+ </div>
+ <!--end intro -->
+
+<div class="rezume" id="rezume">
+    <div class="container">
+        <section id="about-us" class="parallax">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <div class="about-info wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="300ms">
+                            <h2>من کی هستم؟</h2>
+                          <h4 class=" glyphicon glyphicon-user">احمد حسین خانی</h4>
+                          <h4 class="glyphicon glyphicon-time ">متولد 1 اردیبهشت 1370</h4>
+                          <h4 class="glyphicon glyphicon-adjust">فارغ التحصیل رشته مهندسی نرم افزار از دانشکده شهاب دانش قم</h4>
+                           <h4 class="glyphicon glyphicon-book">عاشق برنامه نویسی و دنیای آی تی ، سخت کوش ، وقت شناس ، علاقمند به کارهای گروه</h4>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="our-skills wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="300ms">
+                            <div class="single-skill wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="300ms">
+                                <p class="lead">software Engineering</p>
+                                <div class="progress">
+                                    <div class="progress-bar progress-bar-primary six-sec-ease-in-out" role="progressbar"  aria-valuetransitiongoal="60">60%</div>
+                                </div>
+                            </div>
+                            <div class="single-skill wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="400ms">
+                                <p class="lead">Web Design</p>
+                                <div class="progress">
+                                    <div class="progress-bar progress-bar-primary six-sec-ease-in-out" role="progressbar"  aria-valuetransitiongoal="75">75%</div>
+                                </div>
+                            </div>
+                            <div class="single-skill wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="500ms">
+                                <p class="lead">Php Programming</p>
+                                <div class="progress">
+                                    <div class="progress-bar progress-bar-primary six-sec-ease-in-out" role="progressbar"  aria-valuetransitiongoal="75">75%</div>
+                                </div>
+                            </div>
+                            <div class="single-skill wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="600ms">
+                                <p class="lead">Android programming</p>
+                                <div class="progress">
+                                    <div class="progress-bar progress-bar-primary six-sec-ease-in-out" role="progressbar"  aria-valuetransitiongoal="60">60%</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section><!--/#about-us-->
     </div>
-    <div id="div-btn-start"><a href="#profile" id="btnStart" class="hvr-grow-shadow">شروع</a></div>
 </div>
+ <!--end page rezume-->
+ <div class="blog" id="blog">
+     <div class="container">
+        <div class="row">
+        <div class="col-lg-12 page-header"><h2>وبلاگ <hr></h2></div>
+        </div>
+         <div class="row">
+             <div class="col-sm-6 col-md-4">
+                 <img src="img/c2.jpg" class="img-circle img-responsive">
+                 <h3>شروع برنامه نویسی</h3>
+                 <p>اگر قصد یادگیری برنامه نویسی رو دارید توصیه میکنم
+                 مطالب زیر رو بخونید</p>
+                 <p><a class="btn btn-default" href="#">ادامه مطلب &raquo;</a> </p>
+             </div>
+             <div class="col-sm-6 col-md-4">
+                 <img src="img/c2.jpg" class="img-circle img-responsive">
+                 <h3>شروع برنامه نویسی</h3>
+                 <p>اگر قصد یادگیری برنامه نویسی رو دارید توصیه میکنم
+                     مطالب زیر رو بخونید</p>
+                 <p><a class="btn btn-default" href="#">ادامه مطلب &raquo;</a> </p>
+             </div>
+             <div class="col-sm-6 col-md-4">
+                 <img src="img/c2.jpg" class="img-circle img-responsive">
+                 <h3>شروع برنامه نویسی</h3>
+                 <p>اگر قصد یادگیری برنامه نویسی رو دارید توصیه میکنم
+                     مطالب زیر رو بخونید</p>
+                 <p><a class="btn btn-default" href="#">ادامه مطلب &raquo;</a> </p>
+             </div>
+             <div class="col-sm-6 col-md-4">
+                 <img src="img/c2.jpg" class="img-circle img-responsive">
+                 <h3>شروع برنامه نویسی</h3>
+                 <p>اگر قصد یادگیری برنامه نویسی رو دارید توصیه میکنم
+                     مطالب زیر رو بخونید</p>
+                 <p><a class="btn btn-default" href="#">ادامه مطلب &raquo;</a> </p>
+             </div>
+             <div class="col-sm-6 col-md-4">
+                 <img src="img/c2.jpg" class="img-circle img-responsive">
+                 <h3>شروع برنامه نویسی</h3>
+                 <p>اگر قصد یادگیری برنامه نویسی رو دارید توصیه میکنم
+                     مطالب زیر رو بخونید</p>
+                 <p><a class="btn btn-default" href="#">ادامه مطلب &raquo;</a> </p>
+             </div>
+             <div class="col-sm-6 col-md-4">
+                 <img src="img/c2.jpg" class="img-circle img-responsive">
+                 <h3>شروع برنامه نویسی</h3>
+                 <p>اگر قصد یادگیری برنامه نویسی رو دارید توصیه میکنم
+                     مطالب زیر رو بخونید</p>
+                 <p><a class="btn btn-default" href="#">ادامه مطلب &raquo;</a> </p>
+             </div>
+         </div>
+     </div>
+ </div>
+ <!--blog end-->
+ <div class="sample" id="sample">
+     <div class="container">
+         <div class="row tpad myTooltip"><h2>نمونه کارها<hr></h2>
+            <div class="col-sm-12 col-md-6">
+                <a href="#" data-toggle="tooltip" title data-original-tilte="client one" class="thumbnail">
+                    <img src="img/bg2.jpg" alt="logo">
+                </a>
+            </div>
+             <div class="col-sm-12 col-md-6">
+                 <a href="#" data-toggle="tooltip" title data-original-tilte="client one" class="thumbnail">
+                     <img src="img/bg2.jpg" alt="logo">
+                 </a>
+             </div>
+             <div class="col-sm-12 col-md-6">
+                 <a href="#" data-toggle="tooltip" title data-original-tilte="client one" class="thumbnail">
+                     <img src="img/bg2.jpg" alt="logo">
+                 </a>
+             </div>
+             <div class="col-sm-12 col-md-6">
+                 <a href="#" data-toggle="tooltip" title data-original-tilte="client one" class="thumbnail">
+                     <img src="img/bg2.jpg" alt="logo">
+                 </a>
+             </div>
 
-<!--end of banner-->
-<header class="row">
-    <div id="khani" class="vertical-center">ENGINEERKHANI</div>
-    <nav>
-        <a href="#" id="pull">
-            <div id="menuPic"></div>
-        </a>
-        <ul>
-            <li><a href="#profile">پروفایل</a></li>
-            <li><a href="#rezume">رزومه</a></li>
-            <li><a href="#sample">نمونه کار</a></li>
-            <li><a href="#blog">وبلاگ شخصی</a></li>
-            <li><a href="#contact">تماس با من</a></li>
-            <li><a href="#friends">دوستان</a></li>
-        </ul>
-    </nav>
-</header>
+         </div>
+     </div>
+ </div>
+ <!--sample end-->
+ <div class="friends" id="friends">
+     <div class="container">
+         <div class="row">
 
-<div id="profile">پروفایل</div>
-<div id="rezume">رزومه</div>
-<div id="sample">نمونه کار</div>
-<div id="blog">وبلاگ شخصی</div>
-<div id="contact">تماس با من</div>
+         </div>
+     </div>
+ </div>
+ <!--friends end-->
+ <div class="friends">
 
-<div id="friends">
-    <div id="container">
-        <div class="content">دوستان</div>
-        <video autoplay loop muted>
-            <source src="video/Base Lab.MP4" type="video/mp4">
+         <div class="row">
+             <section id="contact">
+                 <!--<div id="contact-us" class="parallax">-->
+                     <!--<div class="container">-->
+                         <!--<div class="row">-->
+                             <!--<div class="heading text-center col-sm-8 col-sm-offset-2 wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="300ms">-->
+                                 <!--<h2>Contact Us</h2>-->
+                                 <!--<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim ad minim veniam</p>-->
+                             <!--</div>-->
+                         <!--</div>-->
+                         <!--<div class="contact-form wow fadeIn" data-wow-duration="1000ms" data-wow-delay="600ms">-->
+                             <!--<div class="row">-->
+                                 <!--<div class="col-sm-6">-->
+                                     <!--<form id="main-contact-form" name="contact-form" method="post" action="#">-->
+                                         <!--<div class="row  wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="300ms">-->
+                                             <!--<div class="col-sm-6">-->
+                                                 <!--<div class="form-group">-->
+                                                     <!--<input type="text" name="name" class="form-control" placeholder="Name" required="required">-->
+                                                 <!--</div>-->
+                                             <!--</div>-->
+                                             <!--<div class="col-sm-6">-->
+                                                 <!--<div class="form-group">-->
+                                                     <!--<input type="email" name="email" class="form-control" placeholder="Email Address" required="required">-->
+                                                 <!--</div>-->
+                                             <!--</div>-->
+                                         <!--</div>-->
+                                         <!--<div class="form-group">-->
+                                             <!--<input type="text" name="subject" class="form-control" placeholder="Subject" required="required">-->
+                                         <!--</div>-->
+                                         <!--<div class="form-group">-->
+                                             <!--<textarea name="message" id="message" class="form-control" rows="4" placeholder="Enter your message" required="required"></textarea>-->
+                                         <!--</div>-->
+                                         <!--<div class="form-group">-->
+                                             <!--<button type="submit" class="btn-submit">Send Now</button>-->
+                                         <!--</div>-->
+                                     <!--</form>-->
+                                 <!--</div>-->
+                                 <!--<div class="col-sm-6">-->
+                                     <!--<div class="contact-info wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="300ms">-->
+                                         <!--<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</p>-->
+                                         <!--<ul class="address">-->
+                                             <!--<li><i class="fa fa-map-marker"></i> <span> Address:</span> 2400 South Avenue A </li>-->
+                                             <!--<li><i class="fa fa-phone"></i> <span> Phone:</span> +928 336 2000  </li>-->
+                                             <!--<li><i class="fa fa-envelope"></i> <span> Email:</span><a href="mailto:someone@yoursite.com"> support@oxygen.com</a></li>-->
+                                             <!--<li><i class="fa fa-globe"></i> <span> Website:</span> <a href="#">www.sitename.com</a></li>-->
+                                         <!--</ul>-->
+                                     <!--</div>-->
+                                 <!--</div>-->
+                             <!--</div>-->
+                         <!--</div>-->
+                     <!--</div>-->
+                 <!--</div>-->
+             </section><!--/#contact-->
+         </div>
 
-        </video>
+ </div>
+ <!--friends end-->
+ <div class="contactMe">
+     <div class="container">
+         <div class="row">
 
-    </div>
-</div>
-
-<footer>this is footer</footer>
-<script src="javascript/jquery-1.9.1.min.js">
-</script>
-<script type="text/javascript">
-    $('#my-name').hide();
-
-    $('#my-image').slideToggle(2000, function () {
-        $('#my-name').animate({width: 'toggle'}, 350);
-    });
-    var ftop = 0;
-    $(window).scroll(function () {
-        var hight = $('header').position();
-        var top = hight.top;
-        var sticky = $('header');
-        if (ftop == 0) {
-            ftop = top;
-        }
-
-        scroll = $(window).scrollTop();
-        if (scroll > ftop) {
-            sticky.addClass('fixed');
-            $('header').addClass('header-style');
-        } else {
-            $('header').removeClass('header-style');
-            sticky.removeClass('fixed');
-        }
-
-
-    });
-
-    /**/
-    /**/
-    /**/
-    /*scroll to selected a in nave bar*/
-    $('header a[href^="#"]','#div-btn-start a').on('click', function(event) {
-
-        var target = $( $(this).attr('href') );
-
-        scrollTo(target);
-//        if( target.length ) {
-//            event.preventDefault();
-//            $('html, body').animate({
-//                scrollTop: target.offset().top
-//            }, 1000);
-//        }
-
-    });
-
-
-
-    //		video in bg
-    //		/**/
-    // IE detect
-    function iedetect(v) {
-
-        var r = RegExp('msie' + (!isNaN(v) ? ('\\s' + v) : ''), 'i');
-        return r.test(navigator.userAgent);
-
-    }
-    //togle nave menu
-    var pull = $('#pull');
-    menu = $('header nav ul');
-
-
-    menuHeight = menu.height();
-
-    $(pull).on('click', function (e) {
-        e.preventDefault();
-        menu.slideToggle('slow', 'linear');
-
-    });
-
-    // For mobile screens, just show an image called 'poster.jpg'. Mobile
-    // screens don't support autoplaying videos, or for IE.
-    if (screen.width < 800 || iedetect(8) || iedetect(7) || 'ontouchstart' in window) {
-
-        (adjSize = function () { // Create function called adjSize
-
-            $width = $(window).width(); // Width of the screen
-            $height = $(window).height(); // Height of the screen
-
-            // Resize image accordingly
-            $('#container').css({
-                'background-image': 'url(poster.jpg)',
-                'background-size': 'cover',
-                'width': $width + 'px',
-                'height': $height + 'px'
-            });
-
-            // Hide video
-            $('video').hide();
-
-        })(); // Run instantly
-
-        // Run on resize too
-        $(window).resize(adjSize);
-    }
-    else {
-
-        // Wait until the video meta data has loaded
-        $('#container video').on('loadedmetadata', function () {
-
-            var $width, $height, // Width and height of screen
-                    $vidwidth = this.videoWidth, // Width of video (actual width)
-                    $vidheight = this.videoHeight, // Height of video (actual height)
-                    $aspectRatio = $vidwidth / $vidheight; // The ratio the video's height and width are in
-
-            (adjSize = function () { // Create function called adjSize
-
-                $width = $(window).width(); // Width of the screen
-                $height = $(window).height(); // Height of the screen
-
-                $boxRatio = $width / $height; // The ratio the screen is in
-
-                $adjRatio = $aspectRatio / $boxRatio; // The ratio of the video divided by the screen size
-
-                // Set the container to be the width and height of the screen
-                $('#container').css({'width': $width + 'px', 'height': $height + 'px'});
-
-                if ($boxRatio < $aspectRatio) { // If the screen ratio is less than the aspect ratio..
-                    // Set the width of the video to the screen size multiplied by $adjRatio
-                    $vid = $('#container video').css({'width': $width * $adjRatio + 'px'});
-                } else {
-                    // Else just set the video to the width of the screen/container
-                    $vid = $('#container video').css({'width': $width + 'px'});
-                }
-
-            })(); // Run function immediately
-
-            // Run function also on window resize.
-            $(window).resize(adjSize);
-
-        });
-    }
-    // end of video
+         </div>
+     </div>
+ </div>
+ <!--contactMe end-->
+ <footer>
+     <div class="container" id="contactMe">
+         <div class="row">
+             <div class="social-icons">
+                 <ul>
+                     <li><a class="envelope" href="#"><i class="glyphicon glyphicon-envelope"></i></a></li>
+                     <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
+                     <li><a class="dribbble" href="#"><i class="fa fa-dribbble"></i></a></li>
+                     <li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
+                     <li><a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>
+                     <li><a class="tumblr" href="#"><i class="fa fa-tumblr-square"></i></a></li>
+                 </ul>
+             </div>
+             <hr>
+             EngineerKhani&copy2016
+         </div>
+     </div>
+ </footer>
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="javascript/jquery-1.9.1.min.js"></script>
+<script src="javascript/main.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="javascript/bootstrap.js"></script>
+<script>
+    $(function(){
+       $('.carousel').carousel({
+           interval:2000
+       }) ;
+        $('.myTooltip').tooltip({
+            selector:"[data-toggle=tooltip]",
+            container:"body"
+        })
+    })
 </script>
 </body>
 </html>

@@ -1,67 +1,103 @@
+@import url("../webfonts/BYekan/stylesheet.css");
+* {
+    direction: rtl !important;
+    font-family: BYekan ;
+}
+
 .btn {
     border-radius: 0px;
 }
-.tpad{
-     padding-top:10vh;
- }
 .affix {
     top: 0;
     width: 100%;
-    z-index: 100;
+    z-index: 10;
 }
 
 .affix + .container-fluid {
-    padding-top: 70px;
+    padding-top: 100px;
 }
-*{
-    direction: rtl !important;
 
-}
-.navbar  {
- padding-top: 30px;
-    padding-bottom:30px;
+.navbar {
+    padding-top: 30px;
+    padding-bottom: 30px;
     border-radius: 0px;
-    background-color: rgba(000,000,000,0.5);
+    background-color: rgba(000, 000, 000, 0.5);
 
+    min-height: 15vh;
+!important;
 }
-.navbar {min-height:15vh; !important;}
+
 .navbar-nav {
     text-align: center;
 }
-.carousel-caption{
-    z-index: 10;
+
+.carousel-caption {
+    z-index:9;
+
 }
-.carousel-inner > .item > img{
+
+.carousel-caption figure {
+    position: fixed;
+    top: 4vh;
+    /*right:calc(50% + 200px);*/
+    right:40vw;
+
+
+
+
+}
+.carousel-caption figure figcaption{
+    font-family: sans-serif;
+}
+.carousel-inner > .item > img {
     position: absolute;
     top: 0px;
     left: 0;
     min-width: 100%;
     height: 100vh;
+
 }
-.carousel-inner > .item{
+
+.carousel-inner > .item {
     min-width: 100%;
     height: 100vh;
 }
 
-.intro-block{
-background: url(../img/purpalt.png) repeat;
-    padding:20vh 3vh 15vh ;
+.intro-block {
+    background: url(../img/purpalt.png) repeat;
+
     color: #ffffff;
 
 }
-.text-muted{
+
+.text-muted {
     color: #e9e6df;
 
-    font-weight:100;
+    font-weight: 100;
 }
-.sidebar{
 
-    background-color:#e9e6df;
+.sidebar {
+
+    background-color: #e9e6df;
+}
+#VideoContainer {
+    position: relative;
+    overflow: hidden;
+}
+
+#container .content {
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 #rezume {
     background: url("../img/bg.jpg") 50% 0 no-repeat fixed;
-    height: 60vh;
+    height: 100vh;
     background-size: cover;
+
+}
+#rezume *{
+    border-radius: 0;
 }
 #google-map {
     height: 350px;
@@ -72,23 +108,31 @@ background: url(../img/purpalt.png) repeat;
     padding: 12px;
     width: 100%;
     color: #fff;
-    border:0;
+    border: 0;
     margin-top: 40px;
 }
-#contact-us{
-    background: url("../img/bg.jpg") 50% 0 no-repeat fixed;
+
+#contact-us {
+    background: url("../img/bg6.jpg") 50% 0 no-repeat fixed;
     height: 70vh;
     background-size: cover;
-    padding-bottom:20vh;
+    padding-bottom: 20vh;
 
 }
-footer{
+
+footer {
     background-color: #2b542c;
-    height: 40vh;
+   padding-top: 15px;
+    padding-bottom:15px;
+    text-align: center;
+    font-family: sans-serif;
+
 }
 
 footer .social-icons {
-    margin-top: 15px;
+    margin-top: 20px;
+    color: #ffffff;
+
 }
 
 footer .social-icons ul {
@@ -96,35 +140,79 @@ footer .social-icons ul {
     padding: 0;
     margin: 0;
 }
-footer .social-icons ul li{
-    display: inline;
+footer h5{
+    color: #fff;
 }
+footer h5 span{
+    color: red;;
+}
+footer .social-icons ul li {
+    display: inline;
+    margin-left: 10px;
+}
+
 footer .social-icons ul li a {
-    background-color: rgba(0,0,0,.2);
+
     border-radius: 4px;
     line-height: 33px;
 }
 
-footer .social-icons ul li a:hover {
-    color: #fff
+footer .social-icons ul li a {
+  color: #fff
 }
 
 footer .social-icons ul li a.envelope:hover {
-    background-color: #CECB26;
+   color: #CECB26;
 }
 
 footer .social-icons ul li a.facebook:hover {
-    background-color: #3b5999;
+   color: #3b5999;
 }
+
 footer .social-icons ul li a.twitter:hover {
-    background-color: #2ac6f7;
+   color: #2ac6f7;
 }
+
 footer .social-icons ul li a.dribbble:hover {
-    background-color: #ff5b92;
+   color: #ff5b92;
 }
+
 footer .social-icons ul li a.linkedin:hover {
-    background-color: #036dc0;
+   color: #036dc0;
 }
+
 footer .social-icons ul li a.tumblr:hover {
-    background-color: #ff6b00;
+   color: #ff6b00;
+}
+.streetcircle {
+    background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/15979/citywall.png) 0 -5px repeat-x;
+    height: 240px;
+    width: 240px;
+    margin: 50px auto 0;
+    position: relative;
+    overflow: hidden;
+    border-radius: 123px;
+    border: 5px solid white;
+    box-shadow: 0 5px 20px rgba(black, 0.5);
+    animation: wallslide 4s linear infinite;
+}
+
+.hoodie {
+    animation: run-cycle 0.6s steps(6) infinite;
+    background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/15979/running.png) 0 0 no-repeat;
+    height: 160px;
+    width: 112px;
+    position: absolute;
+    bottom: 50px;
+    left: 66px;
+    margin: 0 auto;
+}
+
+@keyframes run-cycle {
+    0%   { background-position: 0 0; }
+    100% { background-position: -672px 0; }
+}
+@keyframes wallslide {
+    0%   { background-position: 0 -5px; }
+    100% { background-position: -1053px -5px; }
 }

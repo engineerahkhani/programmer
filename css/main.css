@@ -1,3 +1,6 @@
+/****************************/
+/*general css style*/
+/****************************/
 @import url("../webfonts/BYekan/stylesheet.css");
 * {
     direction: rtl !important;
@@ -16,14 +19,16 @@
 .affix + .container-fluid {
     padding-top: 100px;
 }
-
+/****************************/
+/*navbar css style*/
+/****************************/
 .navbar {
-    padding-top: 30px;
-    padding-bottom: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     border-radius: 0px;
     background-color: rgba(000, 000, 000, 0.5);
 
-    min-height: 15vh;
+    min-height: 10vh;
 !important;
 }
 
@@ -35,7 +40,9 @@
     z-index:9;
 
 }
-
+/****************************/
+/*welcome section css style*/
+/****************************/
 .carousel-caption figure {
     position: fixed;
     top: 4vh;
@@ -62,24 +69,9 @@
     min-width: 100%;
     height: 100vh;
 }
-
-.intro-block {
-    background: url(../img/purpalt.png) repeat;
-
-    color: #ffffff;
-
-}
-
-.text-muted {
-    color: #e9e6df;
-
-    font-weight: 100;
-}
-
-.sidebar {
-
-    background-color: #e9e6df;
-}
+/****************************/
+/*Video section css style*/
+/****************************/
 #VideoContainer {
     position: relative;
     overflow: hidden;
@@ -90,19 +82,21 @@
     top: 0;
     left: 0;
 }
+/****************************/
+/*requme section css style*/
+/****************************/
 #rezume {
     background: url("../img/bg.jpg") 50% 0 no-repeat fixed;
-    height: 100vh;
+
     background-size: cover;
 
 }
 #rezume *{
     border-radius: 0;
 }
-#google-map {
-    height: 350px;
-}
-
+/****************************/
+/*blog section css style*/
+/****************************/
 .btn-submit {
     display: block;
     padding: 12px;
@@ -111,15 +105,27 @@
     border: 0;
     margin-top: 40px;
 }
+#btnRest{
+    background-color: #d43f3a;
 
-#contact-us {
-    background: url("../img/bg6.jpg") 50% 0 no-repeat fixed;
-    height: 70vh;
-    background-size: cover;
-    padding-bottom: 20vh;
 
 }
+/****************************/
+/*sample section section css style*/
+/****************************/
+#sample{}
+/****************************/
+/*friends section section css style*/
+/****************************/
+#friends{}
+/****************************/
+/*connect me animation section css style*/
+/****************************/
+#connectMe{}
 
+/****************************/
+/*footer section css style*/
+/****************************/
 footer {
     background-color: #2b542c;
    padding-top: 15px;
@@ -184,6 +190,9 @@ footer .social-icons ul li a.linkedin:hover {
 footer .social-icons ul li a.tumblr:hover {
    color: #ff6b00;
 }
+/****************************/
+/*footer animation section css style*/
+/****************************/
 .streetcircle {
     background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/15979/citywall.png) 0 -5px repeat-x;
     height: 240px;

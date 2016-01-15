@@ -1,0 +1,253 @@
+/****************************/
+/*general css style*/
+/****************************/
+@import url("../webfonts/BYekan/stylesheet.css");
+* {
+    direction: rtl !important;
+    font-family: BYekan ;
+}
+body{
+    background: url("../img/bg7.jpg") 50% 0 no-repeat fixed;
+    filter:blur(5px);
+    background-size: cover;
+}
+.btn {
+    border-radius: 0px;
+}
+.affix {
+    top: 0;
+    width: 100%;
+    z-index: 10;
+}
+
+.affix + .container-fluid {
+    padding-top: 100px;
+}
+/****************************/
+/*navbar css style*/
+/****************************/
+.navbar {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 0px;
+    background-color: rgba(255, 255, 255,1);
+
+    min-height: 10vh;
+!important;
+}
+
+.navbar-nav {
+    text-align: center;
+}
+
+/****************************/
+/*welcome section css style*/
+/****************************/
+.carousel-caption figure {
+    position: fixed;
+    top: 4vh;
+    /*right:calc(50% + 200px);*/
+    right:40vw;
+    color: #ffcc00;;
+}
+
+.carousel-caption {
+    z-index:9;
+
+}
+.carousel-caption figure figcaption{
+    font-family: sans-serif;
+}
+.carousel-inner > .item > img {
+    position: absolute;
+    display: block;
+    max-width: 100%;
+    max-height: 100%;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+
+}
+
+.carousel-inner > .item {
+    min-width: 100%;
+    height: 100vh;
+}
+.carousel .glyphicon{
+    color: #ffcc00;
+}
+.carousel-indicators{
+   color: #ffcc00;
+}
+/****************************/
+/*Video section css style*/
+/****************************/
+#VideoContainer {
+    position: relative;
+    overflow: hidden;
+}
+
+#container .content {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+/****************************/
+/*requme section css style*/
+/****************************/
+#rezume {
+    background: url("../img/bg.jpg") 50% 0 no-repeat fixed;
+
+    background-size: cover;
+
+}
+#rezume *{
+    border-radius: 0;
+}
+/****************************/
+/*blog section css style*/
+/****************************/
+.btn-submit {
+    display: block;
+    padding: 12px;
+    width: 100%;
+    color: #fff;
+    border: 0;
+    margin-top: 40px;
+    background-color: #ffcc00;
+}
+#btnRest{
+    background-color: #cccccc;
+
+
+}
+/****************************/
+/*sample section section css style*/
+/****************************/
+#sample{}
+/****************************/
+/*friends section section css style*/
+/****************************/
+#friends{}
+/****************************/
+/*connect me animation section css style*/
+/****************************/
+#connectMe{
+    padding-bottom: 15px;
+}
+.contact-form input,textarea{
+    margin-top: 5px;
+}
+#address{
+    padding-top: 20px;
+}
+#address li{
+    margin-bottom: 5px;
+}
+#address .fa {
+    color: #ffcc00;
+}
+/****************************/
+/*footer section css style*/
+/****************************/
+footer {
+    background-color: #2b542c;
+   padding-top: 15px;
+    padding-bottom:15px;
+    text-align: center;
+    font-family: sans-serif;
+
+}
+
+footer .social-icons {
+    margin-top: 20px;
+    color: #ffffff;
+
+}
+
+footer .social-icons ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+footer h5{
+    color: #fff;
+}
+footer h5 span{
+    color: red;;
+}
+footer .social-icons ul li {
+    display: inline;
+    margin-left: 10px;
+}
+
+footer .social-icons ul li a {
+
+    border-radius: 4px;
+    line-height: 33px;
+}
+
+footer .social-icons ul li a {
+  color: #fff
+}
+
+footer .social-icons ul li a.envelope:hover {
+   color: #CECB26;
+}
+
+footer .social-icons ul li a.facebook:hover {
+   color: #3b5999;
+}
+
+footer .social-icons ul li a.twitter:hover {
+   color: #2ac6f7;
+}
+
+footer .social-icons ul li a.dribbble:hover {
+   color: #ff5b92;
+}
+
+footer .social-icons ul li a.linkedin:hover {
+   color: #036dc0;
+}
+
+footer .social-icons ul li a.tumblr:hover {
+   color: #ff6b00;
+}
+/****************************/
+/*footer animation section css style*/
+/****************************/
+.streetcircle {
+    background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/15979/citywall.png) 0 -5px repeat-x;
+    height: 240px;
+    width: 240px;
+    margin: 50px auto 0;
+    position: relative;
+    overflow: hidden;
+    border-radius: 123px;
+    border: 5px solid white;
+    box-shadow: 0 5px 20px rgba(black, 0.5);
+    animation: wallslide 4s linear infinite;
+}
+
+.hoodie {
+    animation: run-cycle 0.6s steps(6) infinite;
+    background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/15979/running.png) 0 0 no-repeat;
+    height: 160px;
+    width: 112px;
+    position: absolute;
+    bottom: 50px;
+    left: 66px;
+    margin: 0 auto;
+}
+
+@keyframes run-cycle {
+    0%   { background-position: 0 0; }
+    100% { background-position: -672px 0; }
+}
+@keyframes wallslide {
+    0%   { background-position: 0 -5px; }
+    100% { background-position: -1053px -5px; }
+}

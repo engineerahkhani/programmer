@@ -23,6 +23,7 @@ body{
 .affix + .container-fluid {
     padding-top: 100px;
 }
+
 /****************************/
 /*navbar css style*/
 /****************************/
@@ -87,12 +88,15 @@ body{
 #VideoContainer {
     position: relative;
     overflow: hidden;
+    min-width:100%;
+    min-height:100%;
 }
 
 #container .content {
     position: absolute;
     top: 0;
     left: 0;
+
 }
 /****************************/
 /*requme section css style*/

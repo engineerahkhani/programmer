@@ -44,26 +44,30 @@ body{
 /****************************/
 /*welcome section css style*/
 /****************************/
-.carousel-caption figure {
+
+#welcome figure {
     position: fixed;
-    top: 4vh;
-    /*right:calc(50% + 200px);*/
-    right:40vw;
-    color: #ffcc00;;
+    color: red;
+    z-index: 100;
+    text-align: center;
+    font-family: sans-serif;
+    left:50%;
+    transform: translateX(-50%);
+
+
+
 }
 
 .carousel-caption {
     z-index:9;
 
 }
-.carousel-caption figure figcaption{
-    font-family: sans-serif;
-}
+
 .carousel-inner > .item > img {
     position: absolute;
     display: block;
-    max-width: 100%;
-    max-height: 100%;
+    min-width: 100vw;
+    min-height: 30vh;
     left: 0;
     right: 0;
     top: 0;
@@ -81,6 +85,16 @@ body{
 }
 .carousel-indicators{
    color: #ffcc00;
+}
+#welcome .left,#welcome .right{
+    min-height: 10em;
+    display: table-cell;
+    vertical-align: middle;
+    color: red;
+}
+#welcome .fa-chevron-circle-left,.fa-chevron-circle-right{
+    position: absolute;
+    top:50%;
 }
 /****************************/
 /*Video section css style*/

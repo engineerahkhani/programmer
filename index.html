@@ -1,196 +1,422 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
 <head>
+    <title>Programmer</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Programmer
-    </title>
-    <link href="css/css.css" rel="stylesheet" type="text/css"/>
-    <link href="css/hover-min.css" rel="stylesheet" type="text/css"/>
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.css" rel="stylesheet" media="screen">
+    <link href="css/main.css" rel="stylesheet" media="all">
+    <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css" media="all">
 </head>
-<body>
+<body data-spy="scroll" data-target=".navbar">
 
-
-<div id="home" class="row">
-    <div id="my-image" class="row"><img src="img/C1.jpg" width="250" height="250" class="circle"></div>
-    <div id="my-name" class="row">
-        <h2>احمد حسین خانی هستم</h2>
-        <h4>من عاشق برنامه نویسی و دنیای آی تی هستم و به افراد، سازمانها و شرکت ها کمک میکنم تا نرم افزار و وب سایت مورد
-            علاقه خودشون رو داشته باشند.</h4>
-    </div>
-    <div id="div-btn-start"><a href="#profile" id="btnStart" class="hvr-grow-shadow">شروع</a></div>
+<!--welcome section-->
+<div id="welcome" class="carousel slide">
+    <div id="MyPic">
+    <figure class="center-block">
+        <img src="img/C2.jpg" class="img-responsive img-circle">
+        <figcaption>I'M AHMAD</figcaption>
+    </figure>
 </div>
+    <ol class="carousel-indicators">
+        <li data-target="#welcome" data-slide-to="0" class="active"></li>
+        <li data-target="#welcome" data-slide-to="1"></li>
+        <li data-target="#welcome" data-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner">
+        <div class="item active">
+            <img src="img/bg4.jpg">
+            <div class="container active">
+                <div class="carousel-caption">
 
-<!--end of banner-->
-<header class="row">
-    <div id="khani" class="vertical-center">ENGINEERKHANI</div>
-    <nav>
-        <a href="#" id="pull">
-            <div id="menuPic"></div>
-        </a>
-        <ul>
-            <li><a href="#profile">پروفایل</a></li>
-            <li><a href="#rezume">رزومه</a></li>
-            <li><a href="#sample">نمونه کار</a></li>
-            <li><a href="#blog">وبلاگ شخصی</a></li>
-            <li><a href="#contact">تماس با من</a></li>
-            <li><a href="#friends">دوستان</a></li>
+                    <h1>نرم افزار های تحت وب</h1>
+                    <p>طراحی و توسعه نرم افزار های تحت وب متناسب با نیاز شما</p>
+                    <p><a href="#" class="btn btn-success btn-lg">
+                        <span class="fa fa-plus"></span> سفارش
+                    </a></p>
+                </div>
+            </div>
+        </div>
+        <div class="item ">
+            <img src="img/bg5.jpg">
+            <div class="container active">
+                <div class="carousel-caption">
+
+                    <h1>نرم افزار های موبایل</h1>
+                    <p>طراحی و توسعه نرم افزار های اندروید متناسب با نیاز های شما</p>
+                    <p><a href="#" class="btn btn-success btn-lg">
+                        <span class="fa fa-plus"></span> سفارش
+                    </a></p>
+                </div>
+            </div>
+        </div>
+        <div class="item ">
+            <img src="img/bg2.jpg">
+            <div class="container active">
+                <div class="carousel-caption">
+
+                    <h1>طراحی وب</h1>
+                    <p>طراحی و توسعه وب سایت شخصی و کاتالوگ محصولات</p>
+                    <p><a href="#" class="btn btn-success btn-lg">
+                        <span class="fa fa-plus"></span> سفارش
+                    </a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <a class="left carousel-control text-center" href="#welcome" data-slide="prev"><span
+            class="fa fa-chevron-circle-left fa-3x"></span></a>
+    <a class="right carousel-control" href="#welcome" data-slide="next"><span
+            class="fa fa-chevron-circle-right fa-3x"></span></a>
+</div>
+<!--welcome end-->
+<!--navigation goes here-->
+<nav class="navbar navbar-inverse " data-spy="affix" data-offset-top="">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">EngineerKhani</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+        <!--site logo-->
+        <a class="navbar-brand" href="index.html">EngineerKhani</a>
+    </div>
+    <div class="navbar-collapse collapse">
+        <ul class="nav navbar-nav">
+            <li class="active"><a href="#welcome" class="fa fa-home fa-1x">&nbsp; خانه</a></li>
+            <li><a href="#rezume" class="fa fa-user fa-1x">&nbsp; رزومه</a></li>
+            <li><a href="#blog" class="fa fa-rss fa-1x">&nbsp;وبلاگ</a></li>
+            <li><a href="#sample" class="fa fa-desktop fa-1x">&nbsp;نمونه کار</a></li>
+            <li><a href="#friends" class="fa fa-group fa-1x">&nbsp;دوستان</a></li>
+            <li><a href="#contactMe" class="fa fa-envelope fa-1x">&nbsp;تماس با من</a></li>
         </ul>
-    </nav>
-</header>
+    </div>
+</nav>
+<!--end navigation-->
+<!--intro section goes here-->
 
-<div id="profile">پروفایل</div>
-<div id="rezume">رزومه</div>
-<div id="sample">نمونه کار</div>
-<div id="blog">وبلاگ شخصی</div>
-<div id="contact">تماس با من</div>
-
-<div id="friends">
-    <div id="container">
-        <div class="content">دوستان</div>
-        <video autoplay loop muted>
-            <source src="video/Base Lab.MP4" type="video/mp4">
-
-        </video>
-
+<!--end intro -->
+<div class="container">
+<div class="row" id="rezume">
+    <div class="container">
+        <div class="panel panel-default">
+            <div class="panel-heading ">رزومه</div>
+            <div class="panel-body">
+                <div class="colxs12 col-md-6">
+                    <div class="alert-success">مهارت ها</div>
+                    <br>
+                    <div class="progress">
+                        <div class="progress-bar progress-bar-success progress-bar-striped active" role="progressbar"
+                             aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width:90%">
+                            <span class="fa fa-user"> HTml5,Css3,Jquery - 90٪</span>
+                        </div>
+                    </div>
+                    <div class="progress">
+                        <div class="progress-bar progress-bar-success progress-bar-striped active" role="progressbar"
+                             aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width:90%">
+                            <span class="fa fa-user"> UI&UX - 90٪</span>
+                        </div>
+                    </div>
+                    <div class="progress">
+                        <div class="progress-bar progress-bar-success progress-bar-striped active" role="progressbar"
+                             aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width:80%">
+                            <span class="fa fa-user"> Php&Mysql - 80٪</span>
+                        </div>
+                    </div>
+                    <div class="progress">
+                        <div class="progress-bar progress-bar-success progress-bar-striped active" role="progressbar"
+                             aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width:70%">
+                            <span class="fa fa-user"> laravel - 70٪</span>
+                        </div>
+                    </div>
+                    <div class="progress">
+                        <div class="progress-bar progress-bar-success progress-bar-striped active" role="progressbar"
+                             aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width:70%">
+                            <span class="fa fa-user"> android - 70٪</span>
+                        </div>
+                    </div>
+                    <div class="progress">
+                        <div class="progress-bar progress-bar-success progress-bar-striped active" role="progressbar"
+                             aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width:70%">
+                            <span class="fa fa-user"> software engineering - 70٪</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="colxs12 col-md-6 ">
+                    <div class="alert-success">مشخصات فردی</div>
+                    <br>
+                    <div class="fa fa-user">&nbsp;احمد حسین خانی هستم</div>
+                    <br>
+                    <div class="fa fa-calendar">&nbsp;متولد اول اردیبهشت ماه 1370</div>
+                    <br>
+                    <div class="fa fa-laptop">&nbsp;یه منهدس نرم افزار</div>
+                    <br>
+                    <div class="fa fa-child">&nbsp;مجردم</div>
+                    <br>
+                    <div class="fa fa-battery-full">&nbsp;خدمت مقدس سربازیم هم دوماهی میشه ک تموم شده.</div>
+                    <br><br>
+                    <div class="blockquote-reverse">به کاری که باید انجام بدم اهمیت میدم، تا کارم تموم نشه ازش دست
+                        نمیکشم.
+                        من عاشق یادگیری مطالب جدید و تجربه های نو هستم. اکثرا هم از منابع زبان اصلی استفاده می کنم.
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </div>
+<!--end page rezume-->
+<div class="blog" id="blog">
+    <div class="container">
+        <div class="row">
+            <div class=" page-header"><h2><span class="fa fa-book"></span>وبلاگ</h2></div>
+        </div>
+        <div class="row">
+            <h3>آموزش برنامه نویسی در 10 سال</h3><br>
+            <img src="img/programming.jpg" class=" img-responsive img-thumbnail"><br>
 
-<footer>this is footer</footer>
-<script src="javascript/jquery-1.9.1.min.js">
-</script>
-<script type="text/javascript">
-    $('#my-name').hide();
+            <p><b>آموزش برنامه نویسی در 10 سال</b><br/>
+                محققان (1) نشان دادند که برای متخصص شدن در بسیاری از زمینه ها (از شطرنج گرفته تا آهنگ سازی ، اپراتوری
+                تلگراف ، نقاشی ، نواختن پیانو ، شنا ، تنیس ، عصب شناسی ، ...) حدود 10 سال زمان لازم است. نکته ی مهم
+                انجام کار پیوسته و با توجه است ، نه صرفا کاری را مدام تکرار کردن ، بلکه به چالش کشیدن خودتان با کارهایی
+                که فراتر از توانایی فعلی تان است و تحلیل کارایی تان قبل و بعد از انجام ان کار و اصلاح اشتباهاتتان. و بعد
+                تکرار کنید. و دوباره تکرار کنید. هیچ میانبری وجود ندارد: حتی موزارت که در 4 سالگی اعجوبه ای در موسیقی
+                بود ، 13 سال طول کشید تا بتواند اولین کار حرفه ای و جهانیش را بسازد. گروه موسیقی بیتلز در سال 1964 با
+                وارد شدن به صحنه ی موسیقی اکثر کارهایشان جزو کارهای محبوب (و به قولی &quot;نامبر وان&quot;) بودند ولی
+                فراموش نکنید که اعضای گروه از سال 1957 در کلوب های کوچک لیورپول و هامبورگ فعالیت می کردند و اولین موفقیت
+                بزرگشان (Sgt. Peppers) در سال 1967 عرضه شد. در یک مطالعه بر روی دانش آموزان در آکادمی برلین ، محققان
+                اعضای برتر ، متوسط و پایین کلاس را مقایسه کرده و از آن ها پرسیدند که چقدر تمرین کرده اند:<br/>
+                همه (از هر سه گروه) نواختن را از حدود 5 سالگی شروع کرده و در سال های اول هر کس به یک میزان فعالیت می کرد
+                (حدود 2 یا 3 ساعت در هفته) اما در حدود 8 سالگی تفاوت های واقعی نمایان شد. کسانی که در کلاس هایشان بهترین
+                بودند ، بیش از بقیه تمرین می کردند: 6 ساعت در هفته در سن 9 سالگی ، 8 ساعت در 12 سالگی ، 16 ساعت در 14
+                سالگی و الی آخر تا سن 20 که هفته ای بیش از 30 ساعت کار می کردند. در سن 20 سالگی افراد برتر نزدیک به
+                10000 ساعت از عمرشان را به تمرین گذرانده بودند. دانش اموزان رده بعدی حدود 8000 ساعت و دانش اموزان معمولی
+                (معلمین موسیقی در آینده!) حدود 4000 ساعت.<br/>
+                شاید هم 10000 ساعت ان عدد جادویی باشد نه 10 سال. به نظر ساموئل جانسون (1709-1784) زمان بیشتری لازم است:
+                &quot;برتری در هر رشته ای فقط با یک عمر کار به دست می آید و با قیمت کمتری قابل خرید نیست&quot; و اما
+                دستورالعمل من برای موفقیت در برنامه نویسی:<br/>
+            <ul>
+                <li style="">به برنامه نویسی علاقه داشته باشید. اطمینان حاصل کنید که انقدر از برنامه نویسی لذت می برید
+                    که حاضر باشید 10 سال از عمرتان را صرفش کنید.
+                </li>
+                <li style="">با برنامه نویسان دیگر ارتباط داشته باشید. کد برنامه های دیگر را مطالعه کنید. این خیلی مهم
+                    تر از هر کتاب یا دوره ی آموزشی است.
+                </li>
+                <li style="">برنامه بنویسید. بهترین نوع آموزش ، انجام دادن است. در واقع حداکثر سطح کارایی برای افراد در
+                    هر رشته ای ، به طور خودکار با تجربه ی بیشتر حاصل نمی شود بلکه نیاز به تلاش تعمدی برای بهبود دارد.
+                </li>
+                <li style="">می توانید تحصیلاتتان را در دانشگاه هم ادامه بدهید. این کار باعث می شود از رشته تان درک عمیق
+                    تری به دست آورده و همچنین به کارهایی مشغول شوید که نیاز به مدرک دانشگاهی دارند. البته اگر از مدرسه و
+                    درس لذت نمی برید ، می توانید تجربه ی مشابهی را در کار کسب کنید (البته با تلاش بیشتر) Eric Raymond در
+                    دیکشنری هکر ها می گوید: &quot;مطالعه و تحصیلات آکادمیک در رشته ی کامپیوتر یک شخص را تبدیل به یک
+                    برنامه نویس حرفه ای نمی کند ، همانطور که یک فرد فقط با مطالعه ی رنگ و قلم مو نمی تواند نقاش شود&quot;.
+                    یکی از بهترین افرادی که در عمرم استخدام کردم (Jamie Zawinski) ، فقط تا دبیرستان درس را ادامه داده
+                    بود؛ با این وجود این شخص نرم افزار های خیلی خوبی تولید کرده (موزیلا و xemacs) و گروه خودش را در
+                    googlegroups دارد و حتی انقدر پول دراورد که بتواند یک کلوب شبانه بخرد.
+                </li>
+                <li style="">روی پروژه های تیمی کار کنید. در بعضی از پروژه ها بهترین و در بعضی دیگر بدترین برنامه نویس
+                    باشید. وقتی بهترین هستید توانایی های خودتان به عنوان یک رهبر گروه را تست کرده و به دیگر افراد الهام
+                    می دهید. وقتی هم که بدترین باشید یاد می گیرید که حرفه ای ها چه کار می کنند و همچنین چه کارهایی را
+                    دوست ندارند انجام دهند (چون این کارها را می سپارند به شما!)
+                </li>
+                <li style="">روی پروژه های دیگران کار کنید. برنامه هایی که دیگران نوشتند را مطالعه کنید. سعی کنید باگ
+                    های برنامه های دیگران را رفع کنید. به این فکر کنید که چطور برنامه هایتان را طراحی کنید که کار کسانی
+                    که می خواهند ان را نگهداری کنند آسان تر شود.
+                </li>
+                <li style="">کلی زبان برنامه نویسی یاد بگیرید. یک زبان که از شی گرایی و کلاس ها پشتیبانی کند (مثل جاوا
+                    یا سی پلاس پلاس) ، یک زبان تابعی (مثل لیسپ یا ML) (م: یا Haskell) ، یک زبان اعلانی (مثل پرولوگ یا
+                    قالب ها در سی پلاس پلاس) ، یک زبان که از coroutine ها پشتیبانی کند (مثل Scheme یا Icon) (م: امروزه
+                    زبان های دیگری از جمله سی شارپ هم coroutine را دارند) و یک زبان که از برنامه نویسی موازی پشتیبانی
+                    کند (مثل Sisal) (م: و Erlang)
+                </li>
+                <li style="">یادتان باشد که ما با کامپیوتر سر و کار داریم. بدانید که چقدر طول می کشد تا کامپیوترتان یک
+                    دستورالعمل را اجرا کند، یک کلمه را از حافظه واکشی کند (در هر دو حالت وجود و نبودش در کش) ، کلماتی
+                    متوالی را از دیسک بخواند ، یا به یک مکان از دیسک برود (seek) (م: منظور نویسنده آشنایی با معماری
+                    کامپیوتر است. آقای Stroustrup خالق سی پلاس پلاس هم روی این نکته تاکید دارند)
+                </li>
+                <li style="">درگیر استاندارد سازی یک زبان شوید. حالا می تواند کمیته ی ANSI C++‎ باشد یا استاندارد شخصی
+                    تان برای کدنویسی (مثلا این که برای تورفتگی از 2 فاصله استفاده کنید یا 4 تا) در هر حال یاد می گیرید
+                    که بقیه چه چیزهایی را در یک زبان دوست دارند و همینطور علت این دوست داشتن را.
+                </li>
+            </ul>
+            <br/>
+            با در نظر گرفتن این موارد ، این سوال پیش می آید که صرفا با مطالعه ی کتاب چقدر می توانید یاد بگیرید. قبل از
+            تولد اولین بچه ام ، تمام کتاب های &quot;چگونه...&quot; (How To…) را خواندم بودم و باز هم حس می کردم مبتدی
+            ام. 30 ماه بعد (پس از تولد دومین فرزندم) دیگر سراغ کتاب هایم نمی رفتم؛ به جایش به تجربه ی شخصی ام تکیه کردم
+            که معلوم شد خیلی مفیدتر و مطمئن تر از هزاران صفحه کتاب هایی است که توسط متخصصین نوشته شده اند. آقای Fred
+            Brooks در مقاله ی &quot;No Silver Bullets&quot; (2) طرحی سه بخشی برای پیدا کردن بهترین طراحان نرم افزار مشخص
+            کرد:<br/>
+            1- به طور سیستماتیک و هر چه زودتر طراحان برتر را مشخص کنید<br/>
+            2- یک مربی حرفه ای به آن ها اختصاص دهید تا مسئول و مراقب کار باشد<br/>
+            3- فرصت هایی را فراهم بیاورید که این افراد از طریق ارتباط و برانگیختن همدیگر ، رشد کنند<br/>
+            آلن پرلیس می گوید: &quot;هر کسی می تواند حجاری یاد بگیرد: میکل آنژ باید یاد می گرفت چطور این کار را نکند. در
+            مورد برنامه نویسان بزرگ هم همینطور است&quot;<br/>
+            باشه ، بروید و ان کتاب جاوا را بخرید؛ احتمالا به دردتان بخورد ولی زندگی تان یا تخصصتان در کل در طول 24 ساعت
+            ، روز یا حتی ماه تغییر چندانی نخواهد کرد.<br/>
+            <br/>
 
-    $('#my-image').slideToggle(2000, function () {
-        $('#my-name').animate({width: 'toggle'}, 350);
-    });
-    var ftop = 0;
-    $(window).scroll(function () {
-        var hight = $('header').position();
-        var top = hight.top;
-        var sticky = $('header');
-        if (ftop == 0) {
-            ftop = top;
-        }
+        </div>
+    </div>
 
-        scroll = $(window).scrollTop();
-        if (scroll > ftop) {
-            sticky.addClass('fixed');
-            $('header').addClass('header-style');
-        } else {
-            $('header').removeClass('header-style');
-            sticky.removeClass('fixed');
-        }
+</div>
+<!--blog end-->
+<div class="sample" id="sample">
+    <div class="container">
+        <div class="row  myTooltip">
+            <h2>نمونه کارها
+                <hr>
+            </h2>
+            <div class="col-sm-12 col-md-6">
+                <a href="#" data-toggle="tooltip" title data-original-tilte="client one" class="thumbnail">
+                    <img src="img/bg2.jpg" alt="logo">
+                </a>
+            </div>
+            <div class="col-sm-12 col-md-6">
+                <a href="#" data-toggle="tooltip" title data-original-tilte="client one" class="thumbnail">
+                    <img src="img/bg2.jpg" alt="logo">
+                </a>
+            </div>
+            <div class="col-sm-12 col-md-6">
+                <a href="#" data-toggle="tooltip" title data-original-tilte="client one" class="thumbnail">
+                    <img src="img/bg2.jpg" alt="logo">
+                </a>
+            </div>
+            <div class="col-sm-12 col-md-6">
+                <a href="#" data-toggle="tooltip" title data-original-tilte="client one" class="thumbnail">
+                    <img src="img/bg2.jpg" alt="logo">
+                </a>
+            </div>
 
+        </div>
+    </div>
+</div>
+<!--sample end-->
+<div class="friends" id="friends">
+    <div class="container">
+        <div class="row">
+            <div class="panel panel-default">
+                <div class="panel-heading">دوستان من</div>
+                <div class="panel-body">
+                    <div class="col-sm-6 col-md-3">
+                        <img src="img/c2.jpg" class="img-circle img-responsive">
 
-    });
+                        <h3>مانی قاسمی</h3>
 
-    /**/
-    /**/
-    /**/
-    /*scroll to selected a in nave bar*/
-    $('header a[href^="#"]','#div-btn-start a').on('click', function(event) {
+                        <p>مانی در زمینه برنامه نویسی موبایل فعاله</p>
 
-        var target = $( $(this).attr('href') );
+                        <p><a class="btn btn-default" href="#">وبلاگ&raquo;</a></p>
+                    </div>
+                    <div class="col-sm-6 col-md-3">
+                        <img src="img/c2.jpg" class="img-circle img-responsive">
 
-        scrollTo(target);
-//        if( target.length ) {
-//            event.preventDefault();
-//            $('html, body').animate({
-//                scrollTop: target.offset().top
-//            }, 1000);
-//        }
+                        <h3>مانی قاسمی</h3>
 
-    });
+                        <p>مانی در زمینه برنامه نویسی موبایل فعاله</p>
 
+                        <p><a class="btn btn-default" href="#">وبلاگ&raquo;</a></p>
+                    </div>
+                    <div class="col-sm-6 col-md-3">
+                        <img src="img/c2.jpg" class="img-circle img-responsive">
 
+                        <h3>مانی قاسمی</h3>
 
-    //		video in bg
-    //		/**/
-    // IE detect
-    function iedetect(v) {
+                        <p>مانی در زمینه برنامه نویسی موبایل فعاله</p>
 
-        var r = RegExp('msie' + (!isNaN(v) ? ('\\s' + v) : ''), 'i');
-        return r.test(navigator.userAgent);
+                        <p><a class="btn btn-default" href="#">وبلاگ&raquo;</a></p>
+                    </div>
+                    <div class="col-sm-6 col-md-3">
+                        <img src="img/c2.jpg" class="img-circle img-responsive">
 
-    }
-    //togle nave menu
-    var pull = $('#pull');
-    menu = $('header nav ul');
+                        <h3>مانی قاسمی</h3>
 
+                        <p>مانی در زمینه برنامه نویسی موبایل فعاله</p>
 
-    menuHeight = menu.height();
+                        <p><a class="btn btn-default" href="#">وبلاگ&ensp;</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--friends end-->
+<div class="contactMe" id="connectMe">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 page-header"><span class="fa fa-user fa-2x"></span>&nbsp تماس با من</div>
+            <span>در صورت تمایل میتوانید از </span>
 
-    $(pull).on('click', function (e) {
-        e.preventDefault();
-        menu.slideToggle('slow', 'linear');
+            <div class="col-md-6" id="address">
+                <ul>
+                    <li><span class="fa fa-2x fa-phone"></span>&ensp; شماره تلفن:&ensp; 09192952755</li>
+                    <li><span class="fa fa-2x fa-rss"></span>&ensp; وبسایت:&ensp; www.engineerkhani.ir</li>
+                    <li><span class="fa fa-2x fa-envelope"></span>&ensp; ایمیل:&ensp; engineerakhani@gmail.com</li>
+                </ul>
+            </div>
+            <div class="col-md-6">
+                <div class="contact-form" role="form">
+                    <div class="form-group-lg">
+                        <input type="tel" name="name" class="form-control" placeholder="name" required></div>
+                    <div class="form-group-lg">
+                        <input type="email" name="email" class="form-control" placeholder="email" required></div>
+                    <div class="form-group-lg">
+                        <input type="text" name="subject" class="form-control" placeholder="subject" required></div>
+                    <div class="form-group-lg">
+                    <textarea name="message" class="form-control" rows="4" placeholder="message here"
+                              required></textarea></div>
+                    <div class="row">
+                        <div class="col-xs-8">
+                            <button type="submit" class="btn-submit">send</button>
+                        </div>
+                        <div class="col-xs-4">
+                            <button id="btnRest" type="reset" class="btn-submit">rest</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--contactMe end-->
+</div>
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="streetcircle">
+                <div class="hoodie"></div>
+            </div>
+            <div class="social-icons">
+                <ul>
+                    <li><a class="envelope" href="#"><i class="fa fa-envelope fa-2x"></i></a></li>
+                    <li><a class="twitter" href="#"><i class="fa fa-twitter fa-2x"></i></a></li>
+                    <li><a class="dribbble" href="#"><i class="fa fa-dribbble fa-2x"></i></a></li>
+                    <li><a class="facebook" href="#"><i class="fa fa-facebook fa-2x"></i></a></li>
+                    <li><a class="linkedin" href="#"><i class="fa fa-linkedin fa-2x"></i></a></li>
+                    <li><a class="tumblr" href="#"><i class="fa fa-tumblr-square fa-2x"></i></a></li>
+                </ul>
+            </div>
+            <hr>
+            <h5> EngineerKhani &nbsp;<span class="fa fa-copyright"></span> &nbsp;2016</h5>
+        </div>
+    </div>
+</footer>
 
-    });
-
-    // For mobile screens, just show an image called 'poster.jpg'. Mobile
-    // screens don't support autoplaying videos, or for IE.
-    if (screen.width < 800 || iedetect(8) || iedetect(7) || 'ontouchstart' in window) {
-
-        (adjSize = function () { // Create function called adjSize
-
-            $width = $(window).width(); // Width of the screen
-            $height = $(window).height(); // Height of the screen
-
-            // Resize image accordingly
-            $('#container').css({
-                'background-image': 'url(poster.jpg)',
-                'background-size': 'cover',
-                'width': $width + 'px',
-                'height': $height + 'px'
-            });
-
-            // Hide video
-            $('video').hide();
-
-        })(); // Run instantly
-
-        // Run on resize too
-        $(window).resize(adjSize);
-    }
-    else {
-
-        // Wait until the video meta data has loaded
-        $('#container video').on('loadedmetadata', function () {
-
-            var $width, $height, // Width and height of screen
-                    $vidwidth = this.videoWidth, // Width of video (actual width)
-                    $vidheight = this.videoHeight, // Height of video (actual height)
-                    $aspectRatio = $vidwidth / $vidheight; // The ratio the video's height and width are in
-
-            (adjSize = function () { // Create function called adjSize
-
-                $width = $(window).width(); // Width of the screen
-                $height = $(window).height(); // Height of the screen
-
-                $boxRatio = $width / $height; // The ratio the screen is in
-
-                $adjRatio = $aspectRatio / $boxRatio; // The ratio of the video divided by the screen size
-
-                // Set the container to be the width and height of the screen
-                $('#container').css({'width': $width + 'px', 'height': $height + 'px'});
-
-                if ($boxRatio < $aspectRatio) { // If the screen ratio is less than the aspect ratio..
-                    // Set the width of the video to the screen size multiplied by $adjRatio
-                    $vid = $('#container video').css({'width': $width * $adjRatio + 'px'});
-                } else {
-                    // Else just set the video to the width of the screen/container
-                    $vid = $('#container video').css({'width': $width + 'px'});
-                }
-
-            })(); // Run function immediately
-
-            // Run function also on window resize.
-            $(window).resize(adjSize);
-
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="javascript/jquery-1.9.1.min.js"></script>
+<script src="javascript/main.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="javascript/bootstrap.js"></script>
+<script>
+    $(function () {
+        $('.carousel').carousel({
+            interval: 1500
         });
-    }
-    // end of video
+        $('.navbar').affix({
+            offset: {
+                top: $('#welcome').height()
+            }
+        });
+    })
 </script>
 </body>
 </html>
